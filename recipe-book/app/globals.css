@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Body defaults */
+body {
+  @apply bg-gray-50 text-gray-900 font-sans;
+}
+
+/* Labels */
+label {
+  @apply text-gray-700 font-medium;
+}
+
+
+button:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
