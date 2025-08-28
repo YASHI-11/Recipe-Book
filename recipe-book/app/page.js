@@ -62,8 +62,7 @@ const RecipeHomepage = () => {
     }
   };
 
-if (!isLoaded) {
-  console.log(recipes);
+if (!isLoaded|| recipes.length === 0) {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-orange-50 via-white to-red-50">
       <div className="w-16 h-16 border-4 border-orange-400 border-t-transparent rounded-full animate-spin"></div>
